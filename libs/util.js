@@ -64,9 +64,9 @@ function doRequest(uri, resolve, reject) {
     })
 }
 
-function request(interface, options, callback) {
+function request(iface, options, callback) {
 
-    let uri = `https://api.steampowered.com/${interface}/?`
+    let uri = `https://api.steampowered.com/${iface}/?`
 
     if (typeof options === 'function') {
         callback = options
